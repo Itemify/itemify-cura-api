@@ -1,0 +1,9 @@
+- id: calculate-print-size
+  execute-command: "/var/scripts/calculate-print-size.sh"
+  command-working-directory: "/var/webhook"
+  include-command-output-in-response: true
+  include-command-output-in-response-on-error: true
+  pass-environment-to-command: 
+    - source: "url" 
+      name: "file" 
+      envname: "FILE_INPUT"
