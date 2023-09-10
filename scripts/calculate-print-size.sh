@@ -2,10 +2,10 @@
 STL="/models/Model.stl"
 CURA_PATH="/usr/share/cura"
 
-TO_BE_DOWNLOADED="https://minio.baackfs.com/models/$FILE_INPUT"
+TO_BE_DOWNLOADED="https://itemify-models.fra1.cdn.digitaloceanspaces.com/$FILE_INPUT"
 
 if [ -z "$FILE_INPUT" ]; then
-    TO_BE_DOWNLOADED="https://minio.baackfs.com/models/164/3DBenchy.stl"
+    TO_BE_DOWNLOADED="https://itemify-models.fra1.cdn.digitaloceanspaces.com/364/tuxkey.stl"
 fi
 
 curl $TO_BE_DOWNLOADED -o $STL > /dev/null 2>&1
